@@ -1,9 +1,5 @@
 module.exports = {
-  mode: 'jit',
-  purge: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}'
-  ],
+  purge: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -13,7 +9,7 @@ module.exports = {
         'white-blue-soma': '#6DB1B9',
         'card-front': '#4A8385',
         'card-back': '#252725',
-        'teste': '#328381'
+        teste: '#328381',
       },
     },
   },
