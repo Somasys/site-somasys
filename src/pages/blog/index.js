@@ -1,5 +1,5 @@
 import Prismic from 'prismic-javascript';
-import Card from '../../components/Blog/Card/Index';
+import Card from '../../components/Blog/Card/index';
 import { useState } from 'react';
 import BlogHeader from '../../components/Blog/Header';
 
