@@ -48,56 +48,56 @@ const Blog = (props) => {
           </div>
 
           <h1 className='font-bold text-3xl md:text-4xl py-3'>Atualizações</h1>
-          <p className='pb-6'>Todas as útimas versões disponibilizadas dos sistemas Somasys, direto da equipe. </p>
-          <hr className="pt-4"/>
+          <p className='pb-6'>
+            Todas as útimas versões disponibilizadas dos sistemas Somasys, direto da equipe.{' '}
+          </p>
+          <hr className='pt-4' />
 
           <div className='divide-y-2'>
             {searchInput.length > 1
               ? filteredResults.map((post) => {
-                return (
-                  <Card
-                    key={post.id}
-                    categoria={post.data.categoria}
-                    title={post.data.title[0].text}
-                    resumo={post.data.resumo[0].text}
-                    postId={post.id}
-                    data={post.data.release_date}
-                  />
-                )
-              })
+                  return (
+                    <Card
+                      key={post.id}
+                      categoria={post.data.categoria}
+                      title={post.data.title[0].text}
+                      resumo={post.data.resumo[0].text}
+                      postId={post.id}
+                      data={post.data.release_date}
+                    />
+                  );
+                })
               : props.posts.map((post) => {
-                return (
-                  <Card
-                    key={post.id}
-                    categoria={post.data.categoria}
-                    title={post.data.title[0].text}
-                    resumo={post.data.resumo[0].text}
-                    postId={post.id}
-                    data={post.data.release_date}
-                  />
-                )
-              })}
+                  return (
+                    <Card
+                      key={post.id}
+                      categoria={post.data.categoria}
+                      title={post.data.title[0].text}
+                      resumo={post.data.resumo[0].text}
+                      postId={post.id}
+                      data={post.data.release_date}
+                    />
+                  );
+                })}
           </div>
-
         </div>
       </div>
       <BlogFooter />
     </>
-  )
-}
+  );
+};
 
 const BlogFooter = () => {
   return (
-
     <div className='bg-gradient-to-l from-green-soma to-blue-soma'>
       <div className='px-5 mx-auto text-center'>
         <p className='text-lg text-white'>Uma empresa que você pode confiar!</p>
         <p className='text-sm text-white'>© {new Date().getFullYear()} Somasys</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-Blog.Footer = BlogFooter
+Blog.Footer = BlogFooter;
 
 export default Blog;
