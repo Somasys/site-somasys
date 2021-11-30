@@ -72,13 +72,7 @@ const MenuItem = ({ children }) => {
     window.addEventListener('scroll', changeBackground);
   });
   return (
-    <div
-      className={
-        colorChange
-          ? 'hover:scale-110 hover:text-blue-soma hover:cursor-pointer inline'
-          : 'hover:scale-110 hover:text-blue-soma hover:cursor-pointer inline'
-      }
-    >
+    <div className='hover:scale-110 hover:text-blue-soma cursor-pointer inline'>
       {children}
     </div>
   );
