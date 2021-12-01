@@ -2,6 +2,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+
 const Slide = ({ children }) => {
   const settings = {
     dots: false,
@@ -9,8 +10,8 @@ const Slide = ({ children }) => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    arrows: true,
     accessibility: true,
+    arrows: true,
     nextArrow: <SampleArrow />,
     prevArrow: <SampleArrow />,
     responsive: [
@@ -21,6 +22,7 @@ const Slide = ({ children }) => {
           slidesToScroll: 3,
           infinite: true,
           dots: false,
+          // arrows: true,
         },
       },
       {
@@ -30,6 +32,7 @@ const Slide = ({ children }) => {
           slidesToScroll: 2,
           initialSlide: 2,
           dots: false,
+          // arrows: false,
         },
       },
       {
@@ -40,22 +43,27 @@ const Slide = ({ children }) => {
           className: 'h-24',
           accessibility: true,
           dots: false,
+          // arrows: false,
         },
       },
     ],
-  };
-  return <Slider {...settings}>{children}</Slider>;
-};
+  }
+  return (
+    <Slider {...settings}>
+      {children}
+    </Slider>
+  )
+}
 
 const SampleArrow = (props) => {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: 'block', background: '#328381' }}
+      className={`rounded-full block ${className}`}
+      style={{ background: '#328381' }}
       onClick={onClick}
     />
-  );
-};
+  )
+}
 
 export default Slide;

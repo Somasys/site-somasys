@@ -16,11 +16,11 @@ const About = () => {
                         de soluções inteligentes desenvolvidas com seriedade e competência, atendendo a legislação e em constante
                         atualização de sua tecnologia para disponibilizar sempre um software de qualidade aos nossos clientes.
                     </p>
-                    <div className="flex items-center">
+                    {/* <div className="flex items-center">
                         <button className="text-white bg-green-soma border-0 py-2 px-6 focus:outline-none hover:bg-blue-soma rounded text-lg">
                             Conheça a Somasys!
                         </button>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                     <Image
