@@ -1,6 +1,6 @@
 import ClienteModel from '../../model/cliente';
 
-const clientes: ClienteModel[] = [
+export const imagens: ClienteModel[] = [
   new ClienteModel(1, 'Baggio', {
     src: 'https://res.cloudinary.com/somasys2021/image/upload/v1637954983/site/MIX_500x500_askc2e.png',
     alt: 'Supermercado Baggio',
@@ -42,5 +42,3 @@ const clientes: ClienteModel[] = [
     alt: 'Supermercado Central',
   }),
 ];
-
-export default clientes;
