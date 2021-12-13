@@ -7,9 +7,9 @@ const BlogHeader = () => {
         <div className='body-font'>
             <div className='relative top-0 pt-[17%] overflow-hidden'>
                 <div className={`
-            absolute inset-0 object-cover object-top w-screen
-            h-36 filter blur bg-gradient-to-r from-green-soma to-blue-soma
-          `} />
+                    absolute inset-0 object-cover object-top w-screen
+                    h-36 filter blur bg-gradient-to-r from-green-soma to-blue-soma
+                `} />
             </div>
             <div className='mt-[-10%] md:mt-[-5%] lg:mt-[-14%] w-36 lg:w-96 mx-auto'>
                 <div className='relative pt-[56.25%] rounded-2xl'>

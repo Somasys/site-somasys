@@ -21,7 +21,7 @@ function Post({ post, data }) {
 
   const renderizarConteudo = () => {
     return (
-      <div className='max-w-prose mx-auto mb-6 py-8 px-8'>
+      <div className='max-w-prose mx-auto mb-6 p-8'>
         <h1 className='text-3xl font-bold'>{post.results[0].data.title[0].text}</h1>
         <h2 className='mt-2 text-sm text-gray-500'>Admin, {data}</h2>
         <div className='mt-6 items-center'>{RichText.render(post.results[0].data.post)}</div>
