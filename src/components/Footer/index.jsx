@@ -47,10 +47,10 @@ const Info = () => {
           <a className='text-white'>Bairro Lucas Araújo - Passo Fundo/RS</a>
         </li>
         <li>
-          <a className='text-white'>54 3311.1388 - Comercial</a>
+          <a className='text-white'>(54) 3311.1388 - Comercial</a>
         </li>
         <li>
-          <a className='text-white'>54 9 9940.1388 - Administrativo</a>
+          <a className='text-white'>(54) 9 9940.1388 - Comercial</a>
         </li>
         <li>
           <a className='text-white'>comercial@somasys.com.br</a>

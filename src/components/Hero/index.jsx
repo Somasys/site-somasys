@@ -1,12 +1,9 @@
 import Image from 'next/image';
-import Logo from '../../../public/fundo_estatico.jpg'
 
 const Hero = () => {
   return (
-    <div
-      className='flex justify-center items-center
-        bg-gradient-to-l from-green-soma to-blue-soma'
-    >
+    <div className='flex justify-center items-center
+        bg-gradient-to-l from-green-soma to-blue-soma'>
       <div className='flex'>
         {/* <Image
           w="full"
