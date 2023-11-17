@@ -12,9 +12,9 @@ const About = () => {
                         Estamos presentes na área de automação de software desde 1994
                     </h1>
                     <p className="mb-8 leading-relaxed">
-                    Temos reconhecimento através da criação
-                    de soluções inteligentes desenvolvidas com seriedade e competência, atendendo à legislação e em constante
-                    evolução, sempre com o objetivo de disponibilizar um software de qualidade aos nossos clientes.
+                        temos reconhecimento através da criação
+                        de soluções inteligentes desenvolvidas com seriedade e competência, atendendo a legislação e em constante
+                        atualização de sua tecnologia para disponibilizar sempre um software de qualidade aos nossos clientes.
                     </p>
                     {/* <div className="flex items-center">
                         <button className="text-white bg-green-soma border-0 py-2 px-6 focus:outline-none hover:bg-blue-soma rounded text-lg">
