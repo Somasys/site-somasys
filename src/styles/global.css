@@ -31,12 +31,8 @@ body {
 }
 
 .inner {
-  transition: transform 0.8s;
+  transition: transform 0.7s;
   transform-style: preserve-3d;
-}
-
-.card:hover .inner {
-  transform: rotateY(180deg);
 }
 
 .rich-text-container {

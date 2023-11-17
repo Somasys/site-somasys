@@ -4,14 +4,15 @@
 }
 
 .inner {
-    transition: transform 0.8s;
+    transition: transform 0.7s;
     transform-style: preserve-3d;
-}
+} 
 
 .card:hover .inner {
-    transform: rotateY(180deg);
+    transform: translate(-92%);
 }
 
+/*
 .front,
 .back {
     backface-visibility: hidden;
@@ -19,4 +20,4 @@
 
 .back {
     transform: rotatey(180deg);
-}
+} */
