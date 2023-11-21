@@ -8,7 +8,7 @@ const Services = () => {
       alt: 'Gestão Empresarial'
     },
     style: {
-      backgroundImage: "url('gestao_espelhada.jpg')",
+      backgroundImage: "gestao.jpg",
       backgroundSize: 'contain',
     },
     lista: [
@@ -27,7 +27,7 @@ const Services = () => {
       alt: 'Soluções Comerciais'
     },
     style: {
-      backgroundImage: "url('solucao_espelhada.jpg')",
+      backgroundImage: "gestao.jpg",
       backgroundSize: 'contain',
     },
     lista: [
@@ -46,7 +46,7 @@ const Services = () => {
       alt: 'Serviços Oferecidos'
     },
     style: {
-      backgroundImage: "url('servico_espelhada.jpg')",
+      backgroundImage: "servico.jpg",
       backgroundSize: 'contain',
     },
     lista: [
