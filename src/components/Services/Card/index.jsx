@@ -64,39 +64,30 @@ const Card = ({ timing = 1500, children }) => {
                 </div>
 
                 {/* MOBILE */}
-                <div
-                    className='h-full text-center'
-                    onClick={cardClick}
-                    style={{
-                        transform: `rotateY(${isFlipped ? '180deg' : '0deg'})`,
-                        transition: 'transform 0.6s',
-                    }}
-                >
-                    <Image 
-                        unoptimized={true}
-                        src={children.image.src}
-                        alt={children.image.alt}
-                        width="100%"
-                        height="100%"
-                        layout="responsive"
-                    />  
-                    <div className='px-4 py-2 h-full z-40 opacity-80'>
-                        <h1 className='text-white text-l title-font font-large mb-3'>
+                <div className='card-container' onClick={cardClick}>
+                    <div className={`card ${isFlipped ? 'flipped' : ''}`}>
+                        <div className='card-inner'>
+                        <div className='card-front'>
+                            <Image
+                            unoptimized={true}
+                            src={children.image.src}
+                            alt={children.image.alt}
+                            width='100%'
+                            height='100%'
+                            layout='responsive'
+                            />
+                            <h1 className='text-white text-xl title-font font-medium mb-3'>
                             {children.title}
                         </h1>
+                        </div>
+                        <div className='card-back'>
+                            <div className='back-content'>
+                            <CardItem>{children.lista}</CardItem>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                <div className='back'>
-                {/* Conteúdo da parte de trás do card */}
-                    <div className='px-4 py-2 h-full z-40 opacity-80'
-                    style={{
-                        backgroundColor: `white`,
-                        transition: 'transform 0.6s',
-                    }}>
-                        <CardItem>{children.lista}</CardItem>
-                    </div>
-                </div>
-
             </div>
         </div>
     )
