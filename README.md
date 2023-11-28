@@ -25,5 +25,15 @@ npx create-next-app --example with-tailwindcss with-tailwindcss-app
 # or
 yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
+## Iniciando o projeto do zero na máquina local
+#Node.js deve ser >= v18.17.0 para funcionar
+
+1) Instalar Next.js na última versão --> npm install -g next@latest
+2) npm install --save-dev
+3) npm install --save-dev @types/json5 #--> Apenas caso acuse erro na versão do json
+4) next build
+5) npm run build
+6) npm run start
+```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
