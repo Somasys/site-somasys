@@ -29,4 +29,20 @@ export const imagens: ClienteModel[] = [
     src: 'https://res.cloudinary.com/somasys2021/image/upload/v1637954982/site/logo_central_nova_xxqnry.png',
     alt: 'Supermercado Central',
   }),
+  new ClienteModel(8, 'Locatelli', {
+    src: 'https://imagens-six.vercel.app/locatelli.jpg',
+    alt: 'Supermercado Locatelli',
+  }),
+  new ClienteModel(9, 'Parobe', {
+    src: 'https://imagens-six.vercel.app/Parob%C3%A9%20Santa%20Marta-500x500.jpg',
+    alt: 'Parobe Santa Marta',
+  }),
+  new ClienteModel(10, 'Rizzi', {
+    src: 'https://imagens-six.vercel.app/Rizzi%20Ca%C3%A7a%20e%20pesca%20500x500.jpg',
+    alt: 'Rizzi Caca e Pesca',
+  }),
+  new ClienteModel(11, 'Central2', {
+    src: 'https://imagens-six.vercel.app/logo%20central.png',
+    alt: 'Central de Supermercados',
+  })
 ];
