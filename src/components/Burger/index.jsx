@@ -69,7 +69,7 @@ const BuguerLink = ({ onClick }) => {
       </ReactScroll>
 
       <ReactScroll onClick={onClick} to='clients' smooth={true}>
-        <BurguerItem>Parceiros</BurguerItem>
+        <BurguerItem>Clientes</BurguerItem>
       </ReactScroll>
 
       <ReactScroll onClick={onClick} to='contact' smooth={true}>

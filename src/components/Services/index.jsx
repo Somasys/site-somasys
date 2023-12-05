@@ -4,11 +4,11 @@ const Services = () => {
   let gestao = {
     title: "Gestão empresarial",
     image: {
-      src: 'gestao.jpg',
+      src: 'gestaoSwap.png',
       alt: 'Gestão Empresarial'
     },
     style: {
-      backgroundImage: "gestao.jpg",
+      backgroundImage: "gestaoSwap.png",
       backgroundSize: 'contain',
     },
     lista: [
@@ -23,11 +23,11 @@ const Services = () => {
   let solucoes = {
     title: "Soluções Comerciais",
     image: {
-      src: 'solucao.jpg',
+      src: 'solucaoSwap.png',
       alt: 'Soluções Comerciais'
     },
     style: {
-      backgroundImage: "gestao.jpg",
+      backgroundImage: "solucaoSwap.png",
       backgroundSize: 'contain',
     },
     lista: [
@@ -42,11 +42,11 @@ const Services = () => {
   let servicos = {
     title: "Serviços Oferecidos",
     image: {
-      src: 'servico.jpg',
+      src: 'servicoSwap.png',
       alt: 'Serviços Oferecidos'
     },
     style: {
-      backgroundImage: "servico.jpg",
+      backgroundImage: "servicoSwap.png",
       backgroundSize: 'contain',
     },
     lista: [

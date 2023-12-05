@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
+import swapIcon from '../../../../public/swap-icon.png';
 
 
 const Card = ({ timing = 1500, children }) => {
@@ -76,8 +77,17 @@ const Card = ({ timing = 1500, children }) => {
                             height='100%'
                             layout='responsive'
                             />
-                            <h1 className='text-white text-xl title-font font-medium mb-3'>
+                            <h1 className='text-white text-xl title-font font-medium mb-3 bg-gray-400 bg-opacity-50'>
                             {children.title}
+                            <Image
+                            unoptimized={true}
+                            src={swapIcon}
+                            alt="Icone de swap"
+                            width='100%'
+                            height='100%'
+                            layout='responsive'
+                            /> 
+                            
                         </h1>
                         </div>
                         <div className='card-back'>

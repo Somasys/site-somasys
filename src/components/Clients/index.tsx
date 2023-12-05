@@ -16,7 +16,7 @@ const Clients = () => {
   return (
     <div className='text-gray-600 body-font'>
       <div className='container py-24 mx-auto text-center'>
-        <h1 className='title-font font-medium text-black sm:text-4xl mb-4'>PARCEIROS</h1>
+        <h1 className='title-font font-medium text-black sm:text-4xl mb-4'>Clientes</h1>
 
         <p className='lg:w-2/3 mx-auto leading-relaxed mb-3'>
           Algumas das empresas que confiam na Somasys.

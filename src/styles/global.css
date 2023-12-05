@@ -79,3 +79,9 @@ body {
 .back-content {
   padding: 20px; 
 }
+
+a:hover {
+  background-color: rgba(50,131,133,1);
+  transition: 0.3s all ease;
+  box-shadow: 1px 1px 1px gray;
+}

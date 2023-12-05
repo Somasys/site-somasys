@@ -44,5 +44,9 @@ export const imagens: ClienteModel[] = [
   new ClienteModel(11, 'Central2', {
     src: 'https://imagens-six.vercel.app/logo%20central.png',
     alt: 'Central de Supermercados',
+  }),
+  new ClienteModel(12, 'Trevo', {
+    src: 'https://imagens-six.vercel.app/LogoTransparente_Trevo.png',
+    alt: 'Mercado Super Trevo'
   })
 ];
