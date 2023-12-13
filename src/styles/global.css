@@ -80,8 +80,16 @@ body {
   padding: 20px; 
 }
 
-a:hover {
+#btnSaibaMais {
+  box-shadow: 2px 2px 2px rgb(61, 61, 61);
+}
+
+#btnSaibaMais:hover {
   background-color: rgba(50,131,133,1);
   transition: 0.3s all ease;
-  box-shadow: 1px 1px 1px gray;
+  cursor: pointer;
+}
+
+.mt-teste {
+  margin-top: 8em;
 }

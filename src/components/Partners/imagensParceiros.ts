@@ -17,7 +17,7 @@ export const imagens: ParceiroModel[] = [
         src: 'https://imagens-six.vercel.app/logo_ibo.png',
         alt: 'IBO Solutions',
       }),
-      new ParceiroModel(1, 'Mercafacil', {
+    new ParceiroModel(1, 'Mercafacil', {
         src: 'https://imagens-six.vercel.app/logo_Mercafacil.jpg',
         alt: 'Mercafacil',
     }),

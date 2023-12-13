@@ -10,6 +10,7 @@ const Parceiros = () => {
       setParceiros(imagens);
     }
 
+    //Faz o hook para carregar as imagens dos parceiros. Carrega somente uma vez, pois não possui dependências.
     useEffect(() => {
       carregarParceiros();
     }, []);
@@ -30,7 +31,6 @@ return (
             <div
               className='h-64 relative'
               key={idx}
-
             >
               <Image
                 src={parceiros.image.src}
@@ -38,14 +38,18 @@ return (
                 layout='fill'
                 objectFit='contain'
               />
-          </div>       
+            {parceiros.id === 1 && (
+              <div className='absolute inset-0 flex items-center justify-center mt-teste'>
+                <div className='text-white bg-green-soma p-3 rounded-lg text-center mt-20' id='btnSaibaMais'>
+                  <Link href={'https://materiais.mercafacil.com/agendamento-parcerias-somasys'}>
+                    <a target='_blank'>Saiba Mais</a>
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
           ))}
         </Slide>
-        <div className='position-absolute mt-6'>
-            <Link href={'https://materiais.mercafacil.com/agendamento-parcerias-somasys'}>
-                <a target='_blank' className='text-white bg-green-soma p-3 rounded-lg text-center'>Saiba Mais</a>
-            </Link>
-        </div>
       </div>
     </div>
   </div>

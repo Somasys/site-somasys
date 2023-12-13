@@ -1,15 +1,16 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import {useState, useEffect} from 'react';
 
 
 const Slide = ({ children }) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     accessibility: true,
     arrows: true,
     nextArrow: <SampleArrow />,
@@ -62,7 +63,7 @@ const SampleArrow = (props) => {
       className={`rounded-full block ${className}`}
       style={{ background: '#328381' }}
       onClick={onClick}
-    />
+    />  
   )
 }
 

@@ -51,8 +51,8 @@ const Card = ({ timing = 1500, children }) => {
                     <div className='front bg-card-front absolute w-full h-full'>
                         <Image 
                             unoptimized={true}
-                            src={children.image.src}
-                            alt={children.image.alt}
+                            src={children.pcImage.src}
+                            alt={children.pcImage.alt}
                             width="100%"
                             height="100%"
                             layout="responsive"
@@ -70,25 +70,16 @@ const Card = ({ timing = 1500, children }) => {
                         <div className='card-inner'>
                         <div className='card-front'>
                             <Image
-                            unoptimized={true}
-                            src={children.image.src}
-                            alt={children.image.alt}
-                            width='100%'
-                            height='100%'
-                            layout='responsive'
+                                unoptimized={true}
+                                src={children.mobileImage.src}
+                                alt={children.mobileImage.alt}
+                                width='100%'
+                                height='100%'
+                                layout='responsive'
                             />
                             <h1 className='text-white text-xl title-font font-medium mb-3 bg-gray-400 bg-opacity-50'>
-                            {children.title}
-                            <Image
-                            unoptimized={true}
-                            src={swapIcon}
-                            alt="Icone de swap"
-                            width='100%'
-                            height='100%'
-                            layout='responsive'
-                            /> 
-                            
-                        </h1>
+                                {children.title}                          
+                            </h1>
                         </div>
                         <div className='card-back'>
                             <div className='back-content'>

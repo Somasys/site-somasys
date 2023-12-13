@@ -3,12 +3,16 @@ import Card from "./Card";
 const Services = () => {
   let gestao = {
     title: "Gestão empresarial",
-    image: {
+    pcImage: {
+      src: 'gestao.jpg',
+      alt: 'Gestão Empresarial'
+    },
+    mobileImage: {
       src: 'gestaoSwap.png',
       alt: 'Gestão Empresarial'
     },
     style: {
-      backgroundImage: "gestaoSwap.png",
+      backgroundImage: "gestao.jpg",
       backgroundSize: 'contain',
     },
     lista: [
@@ -22,12 +26,16 @@ const Services = () => {
 
   let solucoes = {
     title: "Soluções Comerciais",
-    image: {
+    pcImage: {
+      src: 'solucao.jpg',
+      alt: 'Soluções Comerciais'
+    },
+    mobileImage: {
       src: 'solucaoSwap.png',
       alt: 'Soluções Comerciais'
     },
     style: {
-      backgroundImage: "solucaoSwap.png",
+      backgroundImage: "solucao.jpg",
       backgroundSize: 'contain',
     },
     lista: [
@@ -41,12 +49,16 @@ const Services = () => {
 
   let servicos = {
     title: "Serviços Oferecidos",
-    image: {
+    pcImage: {
+      src: 'servico.jpg',
+      alt: 'Serviços Oferecidos'
+    },
+    mobileImage: {
       src: 'servicoSwap.png',
       alt: 'Serviços Oferecidos'
     },
     style: {
-      backgroundImage: "servicoSwap.png",
+      backgroundImage: "servico.jpg",
       backgroundSize: 'contain',
     },
     lista: [
