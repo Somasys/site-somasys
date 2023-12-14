@@ -24,7 +24,7 @@ return (
       <p className='lg:w-2/3 mx-auto leading-relaxed mb-3'>
         Algumas das empresas que fazem integração com a Somasys.
       </p>
-      <div className='px-8 py-8'>
+      <div className='px-8 py-8 mb-12'>
         <Slide>
           {parceiros.map((parceiros, idx) => (       
             
