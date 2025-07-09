@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { imagens } from './imagensParceiros';
@@ -5,18 +6,22 @@ import Slide from '../Clients/Slide/index';
 import Link from 'next/link';
 
 const Parceiros = () => {
-    const [parceiros, setParceiros] = useState([]);
-    async function carregarParceiros() {
-      setParceiros(imagens);
-    }
+  const [parceiros, setParceiros] = useState([]);
+  const mostrarParceiros = false; // Defina como false para ocultar
 
-    //Faz o hook para carregar as imagens dos parceiros. Carrega somente uma vez, pois não possui dependências.
-    useEffect(() => {
-      carregarParceiros();
-    }, []);
+  async function carregarParceiros() {
+    setParceiros(imagens);
+  }
+
+  useEffect(() => {
+    carregarParceiros();
+  }, []);
+
+  if (!mostrarParceiros) return null; // Impede a renderização
 
 
 return (
+ 
   <div className='text-gray-600 body-font'>
     <div className='container py-24 mx-auto text-center'>
       <h1 className='title-font font-medium text-black sm:text-4xl mb-4'>Parceiros</h1>

@@ -105,10 +105,6 @@ const MenuNav = () => {
         <MenuItem>Clientes</MenuItem>
       </ReactScroll>
 
-      <ReactScroll to='parceiros' smooth={true}>
-        <MenuItem>Parceiros</MenuItem>
-      </ReactScroll>
-
       <ReactScroll to='contact' smooth={true}>
         <MenuItem>Contato</MenuItem>
       </ReactScroll>
